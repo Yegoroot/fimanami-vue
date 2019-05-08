@@ -6,8 +6,27 @@ import './registerServiceWorker'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
-Vue.config.productionTip = false
+import MaterialKit from './plugins/material-kit'
 
+Vue.config.productionTip = false
+Vue.use(MaterialKit)
+
+const NavbarStore = {
+	showNavbar: false
+}
+
+Vue.mixin({
+	data() {
+		return {
+			NavbarStore
+		}
+	}
+})
+
+/* _______________________________________
+ *
+ * GLOBAL COMPONENT AUTO REGISTRATION
+ **/
 const requireComponent = require.context('./components', false, /Base[A-Z]\w+\.(vue|js)$/) // webpack require.context
 requireComponent.keys().forEach(fileName => {
 	const componentConfig = requireComponent(fileName)
