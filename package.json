@@ -9,19 +9,20 @@
 		"test:unit": "vue-cli-service test:unit"
 	},
 	"dependencies": {
+		"@vue/cli-plugin-pwa": "^3.7.0",
+		"@vue/web-component-wrapper": "^1.2.0",
 		"axios": "^0.18.0",
 		"core-js": "^2.6.5",
-		"register-service-worker": "^1.6.2",
-		"vue": "^2.6.10",
-		"vue-router": "^3.0.3",
-		"vuex": "^3.0.1",
-		"@vue/cli-plugin-pwa": "^3.7.0",
 		"nouislider": "13.1.0",
+		"register-service-worker": "^1.6.2",
 		"v-tooltip": "2.0.0-rc.33",
-		"vue-carousel": "0.17.0",
+		"vue": "^2.6.10",
+		"vue-carousel": "^0.18.0",
 		"vue-clickaway": "2.2.2",
 		"vue-lazyload": "1.2.6",
-		"vue-material": "1.0.0-beta-10.2"
+		"vue-material": "1.0.0-beta-10.2",
+		"vue-router": "^3.0.3",
+		"vuex": "^3.0.1"
 	},
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "^3.7.0",

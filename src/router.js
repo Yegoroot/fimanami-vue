@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import EventList from './views/EventList.vue'
-// import EventShow from './views/EventShow.vue'
 import NotFoundComponent from './views/FileNotFound.vue'
-
 import Index from './views/Index.vue'
 import Landing from './views/Landing.vue'
 import Login from './views/Login.vue'
