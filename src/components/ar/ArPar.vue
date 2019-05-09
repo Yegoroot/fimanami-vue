@@ -1,6 +1,7 @@
 <template>
 	<div class="ar-par">
-		<slot> Arabic sentence here </slot>
+		<slot name="text"> Arabic sentence here </slot>
+		<slot name="desc"> </slot>
 	</div>
 </template>
 
