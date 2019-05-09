@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from './views/Index.vue'
+import Article from './views/Article.vue'
 import UI from './views/UI.vue'
 import Landing from './views/Landing.vue'
 import Login from './views/Login.vue'
@@ -21,6 +22,16 @@ export default new Router({
 			props: {
 				header: { colorOnScroll: 400 },
 				footer: { backgroundColor: 'black' }
+			}
+		},
+		{
+			path: '/artice',
+			name: 'article',
+			components: { default: Article, header: MainNavbar, footer: MainFooter },
+			props: {
+				header: { colorOnScroll: 400 },
+				footer: { backgroundColor: 'black' },
+				default: { someProps: 'some value' }
 			}
 		},
 		{

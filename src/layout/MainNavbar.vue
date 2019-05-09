@@ -38,6 +38,18 @@
 								</router-link>
 							</li>
 
+							<li class="md-list-item" style="padding-left: 20px">
+								<router-link
+									:to="{ name: 'article' }"
+									class="md-list-item-router md-list-item-container md-button-clean"
+								>
+									<div class="md-list-item-content">
+										<i class="material-icons" style="    padding-right: 8px;">list</i>
+										Заметки
+									</div>
+								</router-link>
+							</li>
+
 							<!-- <md-list-item href="javascript:void(0)" @click="scrollToElement()">
 								<i class="material-icons">cloud_download</i>
 								<p>Download</p>
