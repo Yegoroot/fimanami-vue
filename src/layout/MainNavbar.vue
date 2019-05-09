@@ -8,7 +8,9 @@
 	>
 		<div class="md-toolbar-row md-collapse-lateral">
 			<div class="md-toolbar-section-start">
-				<h3 class="md-title">Vue Material Kit</h3>
+				<router-link :to="{ name: 'index' }">
+					<h3 class="md-title" style="font-size: 40px !important">في منامي</h3>
+				</router-link>
 			</div>
 			<div class="md-toolbar-section-end">
 				<md-button
@@ -27,55 +29,21 @@
 							<!-- Here you can add your items from the section-start of your toolbar -->
 						</mobile-menu>
 						<md-list>
-							<li class="md-list-item" v-if="!showDownload">
-								<a
-									href="javascript:void(0)"
-									class="md-list-item-router md-list-item-container md-button-clean dropdown"
-								>
+							<li class="md-list-item" style="padding-left: 20px">
+								<router-link :to="{ name: 'ui' }" class="md-list-item-router md-list-item-container md-button-clean">
 									<div class="md-list-item-content">
-										<drop-down direction="down">
-											<md-button
-												slot="title"
-												class="md-button md-button-link md-white md-simple dropdown-toggle"
-												data-toggle="dropdown"
-											>
-												<i class="material-icons">apps</i>
-												<p>Components</p>
-											</md-button>
-											<ul class="dropdown-menu dropdown-with-icons">
-												<li>
-													<a href="#/">
-														<i class="material-icons">layers</i>
-														<p>All Components</p>
-													</a>
-												</li>
-												<li>
-													<a href="https://demos.creative-tim.com/vue-material-kit/documentation/">
-														<i class="material-icons">content_paste</i>
-														<p>Documentation</p>
-													</a>
-												</li>
-											</ul>
-										</drop-down>
+										<i class="material-icons">content_paste</i>
+										<p>Ui Kit</p>
 									</div>
-								</a>
+								</router-link>
 							</li>
 
-							<md-list-item
-								href="https://demos.creative-tim.com/vue-material-kit/documentation/"
-								target="_blank"
-								v-if="showDownload"
-							>
-								<i class="material-icons">content_paste</i>
-								<p>Documentation</p>
-							</md-list-item>
-
-							<md-list-item href="javascript:void(0)" @click="scrollToElement()" v-if="showDownload">
+							<!-- <md-list-item href="javascript:void(0)" @click="scrollToElement()">
 								<i class="material-icons">cloud_download</i>
 								<p>Download</p>
-							</md-list-item>
+							</md-list-item> -->
 
-							<li class="md-list-item" v-else>
+							<li class="md-list-item">
 								<a
 									href="javascript:void(0)"
 									class="md-list-item-router md-list-item-container md-button-clean dropdown"
@@ -88,48 +56,66 @@
 												data-toggle="dropdown"
 											>
 												<i class="material-icons">view_carousel</i>
-												<p>Examples</p>
+												<p>Pages</p>
 											</md-button>
 											<ul class="dropdown-menu dropdown-with-icons">
 												<li>
-													<a href="#/landing">
+													<router-link :to="{ name: 'landing' }">
 														<i class="material-icons">view_day</i>
 														<p>Landing Page</p>
-													</a>
+													</router-link>
 												</li>
 												<li>
-													<a href="#/login">
+													<router-link :to="{ name: 'login' }">
 														<i class="material-icons">fingerprint</i>
 														<p>Login Page</p>
-													</a>
+													</router-link>
 												</li>
 												<li>
-													<a href="#/profile">
+													<router-link :to="{ name: 'profile' }">
 														<i class="material-icons">account_circle</i>
 														<p>Profile Page</p>
-													</a>
+													</router-link>
 												</li>
 											</ul>
 										</drop-down>
 									</div>
 								</a>
 							</li>
+							<!-- <li class="md-list-item" >
+								<router-link :to="{ name: 'index' }" class="md-list-item-router md-list-item-container md-button-clean">
+									<div class="md-list-item-content">
+										<i class="material-icons">profile</i>
+										Учить
+									</div>
+								</router-link>
+							</li> -->
+							<li class="md-list-item">
+								<router-link :to="{ name: 'index' }" class="md-list-item-router md-list-item-container md-button-clean">
+									<div class="md-list-item-content">
+										<i class="material-icons" style="    padding-right: 8px;">person</i>
+										Профиль
+									</div>
+								</router-link>
+							</li>
 
-							<md-list-item href="https://twitter.com/CreativeTim" target="_blank">
-								<i class="fab fa-twitter"></i>
-								<p class="hidden-lg">Twitter</p>
-								<md-tooltip md-direction="bottom">Follow us on Twitter</md-tooltip>
-							</md-list-item>
-							<md-list-item href="https://www.facebook.com/CreativeTim" target="_blank">
-								<i class="fab fa-facebook-square"></i>
-								<p class="hidden-lg">Facebook</p>
-								<md-tooltip md-direction="bottom">Like us on Facebook</md-tooltip>
-							</md-list-item>
-							<md-list-item href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-								<i class="fab fa-instagram"></i>
-								<p class="hidden-lg">Instagram</p>
-								<md-tooltip md-direction="bottom">Follow us on Instagram</md-tooltip>
-							</md-list-item>
+							<li class="md-list-item" style="padding-left: 20px">
+								<router-link :to="{ name: 'index' }" class="md-list-item-router md-list-item-container md-button-clean">
+									<div class="md-list-item-content">
+										<!-- <i class="material-icons">how_to_reg</i> -->
+										<i class="material-icons">brightness_3</i>
+										Вход
+									</div>
+								</router-link>
+							</li>
+							<li class="md-list-item" style="padding-left: 20px">
+								<router-link :to="{ name: 'index' }" class="md-list-item-router md-list-item-container md-button-clean">
+									<div class="md-list-item-content">
+										<i class="material-icons">logout</i>
+										выход
+									</div>
+								</router-link>
+							</li>
 						</md-list>
 					</div>
 				</div>
@@ -177,10 +163,10 @@ export default {
 		}
 	},
 	computed: {
-		showDownload() {
-			const excludedRoutes = ['login', 'landing', 'profile']
-			return excludedRoutes.every(r => r !== this.$route.name)
-		}
+		// showDownload() {
+		// 	const excludedRoutes = ['login', 'landing', 'profile']
+		// 	return excludedRoutes.every(r => r !== this.$route.name)
+		// }
 	},
 	methods: {
 		bodyClick() {
@@ -221,10 +207,10 @@ export default {
 			resizeThrottler(this.handleScroll)
 		},
 		scrollToElement() {
-			let element_id = document.getElementById('downloadSection')
-			if (element_id) {
-				element_id.scrollIntoView({ block: 'end', behavior: 'smooth' })
-			}
+			// let element_id = document.getElementById('downloadSection')
+			// if (element_id) {
+			// 	element_id.scrollIntoView({ block: 'end', behavior: 'smooth' })
+			// }
 		}
 	},
 	mounted() {

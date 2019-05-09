@@ -4,6 +4,7 @@
 			<div class="title">
 				<h2>Typography</h2>
 			</div>
+			<!-- эти классы ничего не значат удали их -->
 			<div class="md-layout">
 				<div class="md-layout-item">
 					<div class="tim-typo">

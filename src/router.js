@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import NotFoundComponent from './views/FileNotFound.vue'
 import Index from './views/Index.vue'
+import UI from './views/UI.vue'
 import Landing from './views/Landing.vue'
 import Login from './views/Login.vue'
 import Profile from './views/Profile.vue'
@@ -18,6 +18,15 @@ export default new Router({
 			path: '/',
 			name: 'index',
 			components: { default: Index, header: MainNavbar, footer: MainFooter },
+			props: {
+				header: { colorOnScroll: 400 },
+				footer: { backgroundColor: 'black' }
+			}
+		},
+		{
+			path: '/ui',
+			name: 'ui',
+			components: { default: UI, header: MainNavbar, footer: MainFooter },
 			props: {
 				header: { colorOnScroll: 400 },
 				footer: { backgroundColor: 'black' }
@@ -51,7 +60,7 @@ export default new Router({
 		},
 		{
 			path: '*',
-			component: NotFoundComponent
+			component: Index
 		}
 	],
 	scrollBehavior: to => {

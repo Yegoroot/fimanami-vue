@@ -14,6 +14,10 @@
 					<md-button class="md-primary"><md-icon>favorite</md-icon> With Icon</md-button>
 					<md-button class="md-primary md-just-icon md-round"><md-icon>favorite</md-icon></md-button>
 					<md-button class="md-primary md-simple">Simple</md-button>
+					<md-button class="md-twitter"><i class="fab fa-twitter"></i>Tweet</md-button>
+					<md-button class="md-facebook"><i class="fab fa-facebook-square"></i> Share</md-button>
+					<md-button class="md-google"><i class="fab fa-google-plus"></i> Share</md-button>
+					<md-button class="md-github"><i class="fab fa-github"></i> Star</md-button>
 				</div>
 			</div>
 			<div class="title">
