@@ -9,7 +9,7 @@
 		<div class="md-toolbar-row md-collapse-lateral">
 			<div class="md-toolbar-section-start">
 				<router-link :to="{ name: 'index' }">
-					<h3 class="md-title" style="font-size: 40px !important">في منامي</h3>
+					<h3 class="md-title">في منامي</h3>
 				</router-link>
 			</div>
 			<div class="md-toolbar-section-end">
@@ -29,7 +29,7 @@
 							<!-- Here you can add your items from the section-start of your toolbar -->
 						</mobile-menu>
 						<md-list>
-							<li class="md-list-item" style="padding-left: 20px">
+							<li class="md-list-item" style="padding-left: 20px" @click="toggleNavbarMobile">
 								<router-link :to="{ name: 'ui' }" class="md-list-item-router md-list-item-container md-button-clean">
 									<div class="md-list-item-content">
 										<i class="material-icons">content_paste</i>
@@ -38,7 +38,7 @@
 								</router-link>
 							</li>
 
-							<li class="md-list-item" style="padding-left: 20px">
+							<li class="md-list-item" style="padding-left: 20px" @click="toggleNavbarMobile">
 								<router-link
 									:to="{ name: 'article' }"
 									class="md-list-item-router md-list-item-container md-button-clean"
@@ -233,3 +233,13 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss">
+.md-title {
+	font-size: 37px !important;
+	line-height: 1;
+	height: initial;
+	padding-bottom: 4px;
+	padding-top: 0px;
+}
+</style>
