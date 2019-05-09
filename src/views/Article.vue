@@ -5,7 +5,7 @@
 		<div class="main main-raised">
 			<div class="section">
 				<div class="container text-right">
-					<div class="md-layout  ">
+					<div class="md-layout">
 						<div class="md-layout-item md-xsmall-size-100 mx-auto">
 							<h1 class="title">Let's talk product</h1>
 							<h5 class="description">
@@ -15,19 +15,32 @@
 							</h5>
 						</div>
 					</div>
-					<div class="description ">
-						<h2>Некоторый заголоваок</h2>
-						<p>
-							An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
-							Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
-							groove structure.
-						</p>
-						<h2>НеДругой заголовок</h2>
-						<p>
-							An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
-							Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
-							groove structure.
-						</p>
+					<div class="md-layout">
+						<div class="md-layout-item md-xsmall-size-100 mx-auto">
+							<h2>Некоторый заголоваок</h2>
+							<p>
+								An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
+								Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
+								groove structure.
+							</p>
+							<h2>НеДругой заголовок</h2>
+							<p>
+								An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
+								Murphy — writes, performs and records all of his own music, <ar-sent>الاسلام في الارض</ar-sent> giving
+								it a warm, intimate feel with a solid groove structure.An artist of considerable range, Chet Faker — the
+								name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own
+								music,
+								<ar-par
+									>وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ وَمَا أَنزَلَ اللَّهُ مِنَ السَّمَاءِ مِن رِّزْقٍ فَأَحْيَا بِهِ
+									الْأَرْضَ بَعْدَ مَوْتِهَا وَتَصْرِيفِ الرِّيَاحِ آيَاتٌ لِّقَوْمٍ يَعْقِلُونَ</ar-par
+								>
+							</p>
+							<h6>
+								An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
+								Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
+								groove structure.
+							</h6>
+						</div>
 					</div>
 				</div>
 			</div>

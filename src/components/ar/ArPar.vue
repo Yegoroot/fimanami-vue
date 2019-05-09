@@ -1,13 +1,13 @@
 <template>
-	<span class="ar-sent">
+	<div class="ar-par">
 		<slot> Arabic sentence here </slot>
-	</span>
+	</div>
 </template>
 
 <style scoped lang="sass">
-.ar-sent
-    font-size: 26px
-    line-height: 0
+.ar-par
+    font-size: 30px
+    line-height: 1.5
     color: #3c4858
     text-align: right
     font-family: 'Mirza', 'Montserrat', sans-serif

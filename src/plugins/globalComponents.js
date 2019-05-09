@@ -2,6 +2,7 @@ import { DropDown } from '../components'
 import { Parallax } from '../components'
 import { VPopover } from 'v-tooltip'
 import ArSen from '@/components/ar/ArSent' // предложение на арабском
+import ArPar from '@/components/ar/ArPar' // предложение на арабском
 
 /**
  * You can register global components here and use them as a plugin in your main Vue instance
@@ -13,6 +14,7 @@ const GlobalComponents = {
 		Vue.component(Parallax.name, Parallax)
 		Vue.component('v-popover', VPopover)
 		Vue.component('ar-sent', ArSen)
+		Vue.component('ar-par', ArPar)
 	}
 }
 
