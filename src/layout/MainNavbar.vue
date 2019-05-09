@@ -29,8 +29,12 @@
 							<!-- Here you can add your items from the section-start of your toolbar -->
 						</mobile-menu>
 						<md-list>
-							<li class="md-list-item" style="padding-left: 20px" @click="toggleNavbarMobile">
-								<router-link :to="{ name: 'ui' }" class="md-list-item-router md-list-item-container md-button-clean">
+							<li class="md-list-item" style="padding-left: 20px">
+								<router-link
+									@click.native="closeNavbarMobile"
+									:to="{ name: 'ui' }"
+									class="md-list-item-router md-list-item-container md-button-clean"
+								>
 									<div class="md-list-item-content">
 										<i class="material-icons">content_paste</i>
 										<p>Ui Kit</p>
@@ -38,8 +42,9 @@
 								</router-link>
 							</li>
 
-							<li class="md-list-item" style="padding-left: 20px" @click="toggleNavbarMobile">
+							<li class="md-list-item" style="padding-left: 20px">
 								<router-link
+									@click="closeNavbarMobile"
 									:to="{ name: 'article' }"
 									class="md-list-item-router md-list-item-container md-button-clean"
 								>
@@ -63,6 +68,7 @@
 									<div class="md-list-item-content">
 										<drop-down direction="down">
 											<md-button
+												@click="closeNavbarMobile"
 												slot="title"
 												class="md-button md-button-link md-white md-simple dropdown-toggle"
 												data-toggle="dropdown"
@@ -72,7 +78,7 @@
 											</md-button>
 											<ul class="dropdown-menu dropdown-with-icons">
 												<li>
-													<router-link :to="{ name: 'landing' }">
+													<router-link :to="{ name: 'landing' }" @click="closeNavbarMobile">
 														<i class="material-icons">view_day</i>
 														<p>Landing Page</p>
 													</router-link>
@@ -201,6 +207,10 @@ export default {
 			this.toggledClass = !this.toggledClass
 			this.bodyClick()
 		},
+		closeNavbarMobile() {
+			this.NavbarStore.showNavbar = false
+			this.toggledClass = false
+		},
 		handleScroll() {
 			let scrollValue = document.body.scrollTop || document.documentElement.scrollTop
 			let navbarColor = document.getElementById('toolbar')
@@ -234,7 +244,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .md-title {
 	font-size: 37px !important;
 	line-height: 1;
