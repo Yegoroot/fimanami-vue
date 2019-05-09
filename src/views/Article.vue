@@ -30,6 +30,8 @@
 								it a warm, intimate feel with a solid groove structure.An artist of considerable range, Chet Faker — the
 								name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own
 								music,
+							</p>
+							<p>
 								<ar-par
 									>وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ وَمَا أَنزَلَ اللَّهُ مِنَ السَّمَاءِ مِن رِّزْقٍ فَأَحْيَا بِهِ
 									الْأَرْضَ بَعْدَ مَوْتِهَا وَتَصْرِيفِ الرِّيَاحِ آيَاتٌ لِّقَوْمٍ يَعْقِلُونَ</ar-par
