@@ -44,6 +44,16 @@
 								</ar-par>
 							</p>
 						</div>
+
+						<div class="md-layout-item md-xsmall-size-100 mx-auto">
+							<h2>Тперерь рассмотрив слова</h2>
+							<ar-word data-preffix="أ" data-root="ذهبُ" data-suffix="" />
+							<br />
+							<ar-word data-preffix="" data-root="جَزَا‍" data-suffix="كَ" /> <br />
+							<ar-word data-preffix="نَ" data-root="ذهبُ" /><br />
+							<ar-word data-suffix="ك" data-root="في‍" /><br />
+							<ar-word data-suffix="ونَ" data-root="مُدُّ" data-preffix="تَ‍" /><br />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -71,10 +81,10 @@ export default {
 				backgroundImage: `url(${this.header})`
 			}
 		}
-	},
-	created() {
-		console.log(this._props)
 	}
+	// created() {
+	// 	console.log(this._props)
+	// }
 }
 </script>
 
