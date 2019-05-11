@@ -44,7 +44,7 @@
 
 							<li class="md-list-item" style="padding-left: 20px">
 								<router-link
-									@click="closeNavbarMobile"
+									@click.native="closeNavbarMobile"
 									:to="{ name: 'article' }"
 									class="md-list-item-router md-list-item-container md-button-clean"
 								>
@@ -68,7 +68,6 @@
 									<div class="md-list-item-content">
 										<drop-down direction="down">
 											<md-button
-												@click="closeNavbarMobile"
 												slot="title"
 												class="md-button md-button-link md-white md-simple dropdown-toggle"
 												data-toggle="dropdown"
@@ -78,13 +77,13 @@
 											</md-button>
 											<ul class="dropdown-menu dropdown-with-icons">
 												<li>
-													<router-link :to="{ name: 'landing' }" @click="closeNavbarMobile">
+													<router-link :to="{ name: 'landing' }" @click.native="closeNavbarMobile">
 														<i class="material-icons">view_day</i>
 														<p>Landing Page</p>
 													</router-link>
 												</li>
 												<li>
-													<router-link :to="{ name: 'login' }">
+													<router-link :to="{ name: 'login' }" @click.native="closeNavbarMobile">
 														<i class="material-icons">fingerprint</i>
 														<p>Login Page</p>
 													</router-link>
@@ -100,15 +99,7 @@
 									</div>
 								</a>
 							</li>
-							<!-- <li class="md-list-item" >
-								<router-link :to="{ name: 'index' }" class="md-list-item-router md-list-item-container md-button-clean">
-									<div class="md-list-item-content">
-										<i class="material-icons">profile</i>
-										Учить
-									</div>
-								</router-link>
-							</li> -->
-							<li class="md-list-item">
+							<li class="md-list-item padding-mobile">
 								<router-link :to="{ name: 'index' }" class="md-list-item-router md-list-item-container md-button-clean">
 									<div class="md-list-item-content">
 										<i class="material-icons" style="    padding-right: 8px;">person</i>
@@ -251,5 +242,10 @@ export default {
 	height: initial;
 	padding-bottom: 4px;
 	padding-top: 0px;
+}
+@media screen and (max-width: 992px) {
+	.padding-mobile {
+		padding-left: 20px;
+	}
 }
 </style>
